@@ -1,4 +1,4 @@
-@clr/icons@0.12.0-rc.2
+@clr/icons@0.12.0
 MIT
 MIT
 
@@ -29,10 +29,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-
-@clr/ui@0.12.0-rc.2
-MIT
-MIT
 
 core-js@2.5.7
 MIT
@@ -431,7 +427,7 @@ If the Work includes a "NOTICE" text file as part of its distribution, then any 
 
 END OF TERMS AND CONDITIONS
 
-@clr/angular@0.12.0-rc.2
+@clr/angular@0.12.0
 MIT
 MIT
 
