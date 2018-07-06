@@ -16,9 +16,15 @@
             <a class="nav-link" routerLink="/community" routerLinkActive="active"><span class="nav-text">Community</span></a>
             <a class="nav-link" routerLink="/news" routerLinkActive="active"><span class="nav-text">What's New</span></a>
         </div>
-        <div class="settings">
-            <!-- watch/star widget from https://ghbtns.com/#original-watch-aka-star... apache 2 license. thanks, mdo! -->
-            <iframe class="github-btn" src="https://ghbtns.com/github-btn.html?user=vmware&repo=clarity&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+        <div class="header-actions">
+            <clr-dropdown>
+                <button type="button" class="nav-icon dropdown-toggle" clrDropdownTrigger>
+                    <clr-icon shape="cog"></clr-icon>
+                </button>
+                <clr-dropdown-menu clrPosition="bottom-right" *clrIfOpen>
+                    <button type="button" *ngFor="let theme of themes" (click)="setTheme(theme)" clrDropdownItem>{{theme.name}}</button>
+                </clr-dropdown-menu>
+            </clr-dropdown>
         </div>
     </clr-header>
 

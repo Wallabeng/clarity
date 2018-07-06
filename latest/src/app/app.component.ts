@@ -1,7 +1,8 @@
-import {Component, ElementRef, OnInit, Renderer,InjectionToken, Inject} from '@angular/core';
+import {Component, ElementRef, OnInit, Renderer,InjectionToken, Inject, PLATFORM_ID} from '@angular/core';
 import {Router, NavigationEnd} from "@angular/router";
 import {Title} from '@angular/platform-browser';
 import {environment} from "../environments/environment";
+import { isPlatformBrowser, DOCUMENT } from '@angular/common';
 
 export const PLATFORM_TOKEN = new InjectionToken<string>("clarity");
 
@@ -16,8 +17,25 @@ const PRODUCT_TITLE = require('../settings/global.json').alt_title;
 export class AppComponent implements OnInit {
     
     environment = environment;
+    linkRef: HTMLLinkElement;
 
-    constructor(private renderer: Renderer, private el: ElementRef, private router: Router, private titleService: Title) {
+    themes = [
+        { name: 'Clarity (light)', href: 'styles/clr-ui.min.css' },
+        { name: 'Clarity (dark)', href: 'styles/clr-ui-dark.min.css' },
+        { name: 'VU3', href: 'styles/clr-addons-vu3.min.css' },
+        { name: 'MVAP', href: 'styles/clr-addons-mvap.min.css' }];
+
+    constructor(private renderer: Renderer, private el: ElementRef, private router: Router, private titleService: Title, @Inject(DOCUMENT) private document: Document, @Inject(PLATFORM_ID) private platformId: Object) {
+        if (isPlatformBrowser(this.platformId)) {
+            this.linkRef = this.document.createElement('link');
+            this.linkRef.rel = 'stylesheet';
+            this.linkRef.href = this.themes[0].href;
+            this.document.querySelector('head').appendChild(this.linkRef);
+        }
+    }
+
+    setTheme(theme) {
+        this.linkRef.href = theme.href;
     }
 
     ngOnInit() {
