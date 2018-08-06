@@ -33,7 +33,6 @@ export class AppComponent implements OnInit {
             this.document.querySelector('head').appendChild(this.linkRef);
         }
     }
-
     setTheme(theme) {
         this.linkRef.href = theme.href;
     }
@@ -60,6 +59,12 @@ export class AppComponent implements OnInit {
     updateBodyClasses() {
         this.bodyClasses.length = 0;
         this.bodyClasses = this.collectRouteData("bodyClass");
+    }
+
+    trackBannerAction(eventLabel: string) {
+        if (window["trackHiringAlert"]){
+            window["trackHiringAlert"](eventLabel);
+        }
     }
 
     public productTitle = PRODUCT_TITLE;
