@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
         { name: 'VU3', href: 'styles/clr-addons-vu3.min.css' },
         { name: 'MVAP', href: 'styles/clr-addons-mvap.min.css' }];
 
-    constructor(private renderer: Renderer, private el: ElementRef, private router: Router, private titleService: Title, @Inject(DOCUMENT) private document: Document, @Inject(PLATFORM_ID) private platformId: Object) {
+    constructor(private renderer: Renderer, private el: ElementRef, public router: Router, private titleService: Title, @Inject(DOCUMENT) private document: Document, @Inject(PLATFORM_ID) private platformId: Object) {
         if (isPlatformBrowser(this.platformId)) {
             this.linkRef = this.document.createElement('link');
             this.linkRef.rel = 'stylesheet';
