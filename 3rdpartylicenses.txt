@@ -1,4 +1,4 @@
-@clr/icons@0.12.1
+@clr/icons@0.12.5
 MIT
 MIT
 
@@ -427,7 +427,7 @@ If the Work includes a "NOTICE" text file as part of its distribution, then any 
 
 END OF TERMS AND CONDITIONS
 
-@clr/angular@0.12.1
+@clr/angular@0.12.5
 MIT
 MIT
 
