@@ -88,14 +88,6 @@ const documentationRoutes: Routes = [
                 }
             },
             {
-                path: "code-highlight",
-                loadChildren: "app/documentation/demos/code/code-highlight.demo.module#CodeHighlightDemoModule",
-                data: {
-                    bodyClass: "page-code-highlight",
-                    browserTitle: "Code Highlight"
-                }
-            },
-            {
                 path: "color",
                 loadChildren: "app/documentation/demos/color/color.demo.module#ColorDemoModule",
                 data: {
@@ -160,14 +152,6 @@ const documentationRoutes: Routes = [
                 }
             },
             {
-                path: "input-fields",
-                loadChildren: "app/documentation/demos/input-fields/input-fields.demo.module#InputFieldsDemoModule",
-                data: {
-                    bodyClass: "input-fields",
-                    browserTitle: "Input Fields"
-                }
-            },
-            {
                 path: "labels",
                 loadChildren: "app/documentation/demos/labels/labels.demo.module#LabelsDemoModule",
                 data: {
@@ -208,6 +192,14 @@ const documentationRoutes: Routes = [
                 }
             },
             {
+                path: "password",
+                loadChildren: "app/documentation/demos/password/password.demo.module#PasswordDemoModule",
+                data: {
+                    bodyClass: "page-password",
+                    browserTitle: "Password"
+                }
+            },
+            {
                 path: "progress",
                 loadChildren: "app/documentation/demos/progress-bars/progress-bars.demo.module#ProgressBarsDemoModule",
                 data: {
@@ -216,19 +208,19 @@ const documentationRoutes: Routes = [
                 }
             },
             {
-                path: "radios",
-                loadChildren: "app/documentation/demos/radios/radios.demo.module#RadiosDemoModule",
+                path: "radio",
+                loadChildren: "app/documentation/demos/radio/radio.demo.module#RadioDemoModule",
                 data: {
-                    bodyClass: "page-radios",
+                    bodyClass: "page-radio",
                     browserTitle: "Radio Buttons"
                 }
             },
             {
-                path: "select-boxes",
-                loadChildren: "app/documentation/demos/selects/selects.demo.module#SelectsDemoModule",
+                path: "select",
+                loadChildren: "app/documentation/demos/select/select.demo.module#SelectDemoModule",
                 data: {
                     bodyClass: "page-select-boxes",
-                    browserTitle: "Select Boxes"
+                    browserTitle: "Select"
                 }
             },
             {

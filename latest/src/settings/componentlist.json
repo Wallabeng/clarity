@@ -80,16 +80,6 @@
             "dox": 20
         },
         {
-            "url": "code-highlight",
-            "text": "Code Highlight",
-            "type": "component",
-            "ux": 20,
-            "ui": -1,
-            "core": -1,
-            "ng": 20,
-            "dox": 20
-        },
-        {
             "url": "/get-started#howToUse",
             "text": "Clarity Build",
             "ux": -1,
@@ -152,7 +142,7 @@
         },
         {
             "url": "forms",
-            "text": "Forms (Layout)",
+            "text": "Forms",
             "type": "component",
             "ux": 20,
             "ui": 20,
@@ -190,17 +180,8 @@
             "ui": 20,
             "core": -1,
             "ng": 20,
-            "dox": 20
-        },
-        {
-            "url": "input-fields",
-            "text": "Input Fields",
-            "type": "component",
-            "ux": 20,
-            "ui": 20,
-            "core": -1,
-            "ng": -1,
-            "dox": 20
+            "dox": 20,
+            "newLayout": true
         },
         {
             "url": "labels",
@@ -285,6 +266,17 @@
             "dox": 5
         },
         {
+            "url": "password",
+            "text": "Password",
+            "type": "component",
+            "ux": 20,
+            "ui": 20,
+            "core": -1,
+            "ng": 20,
+            "dox": 20,
+            "newLayout": true
+        },
+        {
             "url": "progress",
             "text": "Progress Bars",
             "type": "component",
@@ -295,7 +287,7 @@
             "dox": 20
         },
         {
-            "url": "radios",
+            "url": "radio",
             "text": "Radio Buttons",
             "type": "component",
             "ux": 20,
@@ -315,8 +307,8 @@
             "dox": 5
         },
         {
-            "url": "select-boxes",
-            "text": "Select Boxes",
+            "url": "select",
+            "text": "Select",
             "type": "component",
             "ux": 20,
             "ui": 20,
