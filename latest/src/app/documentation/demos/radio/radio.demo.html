@@ -1,7 +1,7 @@
 <clr-doc-wrapper [ng]="ng" [ui]="ui" [title]="title" [newLayout]="newLayout">
     <article>
         <h5 class="component-summary" id="summary">
-            Radio inputs radio buttons, users can select one option from a group of options.
+            Using radio buttons, users can select one option from a group of options.
         </h5>
 
         <h2 id="forms-code-samples">Angular Radio Component</h2>
@@ -9,24 +9,6 @@
         <p>If you are using Angular, the recommended approach is to always use the <code class="clr-code">ClrRadio</code>
             directive on your radio buttons to help manage the form control. By using <code class="clr-code">ClrRadio</code>,
             you'll automatically be able to leverage built in validation, helper text, and layout features in forms.</p>
-
-        <div class="alert alert-info">
-            <div class="alert-items">
-                <div class="alert-item static">
-                    <div class="alert-icon-wrapper">
-                        <clr-icon class="alert-icon" shape="info-circle"></clr-icon>
-                    </div>
-                    <span class="alert-text">
-                        The forms features described here are not part of the main <code class="clr-code">ClarityModule</code>
-                        in this release. You have to opt into them by including the additional <code class="clr-code">ClrFormsNextModule</code>
-                        in your module imports.
-                    </span>
-                    <div class="alert-actions">
-                        <a routerLink="forms">Learn more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <h4>Basic radio button</h4>
 
@@ -51,11 +33,11 @@
         <p></p>
 
         <clr-radio-wrapper>
-            <input type="radio" clrRadio name="test2" />
+            <input type="radio" clrRadio name="test2" value="option1" />
             <label>Option 1</label>
         </clr-radio-wrapper>
         <clr-radio-wrapper>
-            <input type="radio" clrRadio name="test2" />
+            <input type="radio" clrRadio name="test2" value="option2" />
             <label>Option 2</label>
         </clr-radio-wrapper>
 
@@ -78,12 +60,13 @@
         <p></p>
 
         <clr-radio-container>
+            <label>Full radio example</label>
             <clr-radio-wrapper>
-                <input type="radio" clrRadio name="test3" required [(ngModel)]="exampleOne" />
+                <input type="radio" clrRadio name="test3" required value="option1" [(ngModel)]="exampleOne" />
                 <label>Option 1</label>
             </clr-radio-wrapper>
             <clr-radio-wrapper>
-                <input type="radio" clrRadio name="test3" required [(ngModel)]="exampleOne" />
+                <input type="radio" clrRadio name="test3" required value="option2" [(ngModel)]="exampleOne" />
                 <label>Option 2</label>
             </clr-radio-wrapper>
             <clr-control-helper>Helper text</clr-control-helper>
@@ -93,6 +76,31 @@
         <p></p>
 
         <clr-code-snippet [clrCode]="ngHelpers"></clr-code-snippet>
+
+        <h4>Inline radios</h4>
+
+        <p>Radio buttons can be placed inline by default by adding the <code class="clr-code">clrInline</code> directive
+            to your radio container elements. The radio buttons will wrap if there is not enough space.</p>
+
+        <p></p>
+
+        <clr-radio-container clrInline>
+            <label>Inline radio example</label>
+            <clr-radio-wrapper>
+                <input type="radio" clrRadio name="test4" required value="option1" [(ngModel)]="exampleTwo" />
+                <label>Option 1</label>
+            </clr-radio-wrapper>
+            <clr-radio-wrapper>
+                <input type="radio" clrRadio name="test4" required value="option2" [(ngModel)]="exampleTwo" />
+                <label>Option 2</label>
+            </clr-radio-wrapper>
+            <clr-control-helper>Helper text</clr-control-helper>
+            <clr-control-error>This field is required!</clr-control-error>
+        </clr-radio-container>
+
+        <p></p>
+
+        <clr-code-snippet [clrCode]="ngInline"></clr-code-snippet>
 
 
 
@@ -115,8 +123,8 @@
         <p></p>
 
         <div class="clr-radio-wrapper">
-            <input type="radio" id="radio1" name="radio-basic" class="clr-radio">
-            <label for="radio1">My choice</label>
+            <input type="radio" id="radio0" name="radio-basic" value="option1" class="clr-radio">
+            <label for="radio0">My choice</label>
         </div>
 
         <p></p>
@@ -132,18 +140,24 @@
         <p></p>
 
         <div class="clr-form-control">
-            <label class="clr-control-label">Basic radio</label>
+            <label class="clr-control-label">Full radio example</label>
             <div class="clr-control-container">
                 <div class="clr-radio-wrapper">
-                    <input type="radio" id="vertical-radio1" name="radio-full" class="clr-radio">
-                    <label for="vertical-radio1" class="clr-control-label">option 1</label>
-                    <input type="radio" id="vertical-radio2" name="radio-full" class="clr-radio">
-                    <label for="vertical-radio2" class="clr-control-label">option 2</label>
-                    <input type="radio" id="vertical-radio3" name="radio-full" class="clr-radio">
-                    <label for="vertical-radio3" class="clr-control-label">option 3</label>
+                    <input type="radio" id="radio1" name="radio-full" value="option1" class="clr-radio">
+                    <label for="radio1" class="clr-control-label">option 1</label>
                 </div>
-                <clr-icon class="clr-validate-icon" shape="exclamation-circle"></clr-icon>
-                <span class="clr-subtext">Helper Text</span>
+                <div class="clr-radio-wrapper">
+                    <input type="radio" id="radio2" name="radio-full" value="option2" class="clr-radio">
+                    <label for="radio2" class="clr-control-label">option 2</label>
+                </div>
+                <div class="clr-radio-wrapper">
+                    <input type="radio" id="radio3" name="radio-full" value="option3" class="clr-radio">
+                    <label for="radio3" class="clr-control-label">option 3</label>
+                </div>
+                <div class="clr-subtext-wrapper">
+                    <clr-icon class="clr-validate-icon" shape="exclamation-circle"></clr-icon>
+                    <span class="clr-subtext">Helper Text</span>
+                </div>
             </div>
         </div>
 
@@ -162,18 +176,24 @@
         <p></p>
 
         <div class="clr-form-control">
-            <label class="clr-control-label">Basic radio</label>
+            <label class="clr-control-label">Error radio</label>
             <div class="clr-control-container clr-error">
                 <div class="clr-radio-wrapper">
-                    <input type="radio" id="vertical-radio1" name="radio-error" class="clr-radio">
-                    <label for="vertical-radio1" class="clr-control-label">option 1</label>
-                    <input type="radio" id="vertical-radio2" name="radio-error" class="clr-radio">
-                    <label for="vertical-radio2" class="clr-control-label">option 2</label>
-                    <input type="radio" id="vertical-radio3" name="radio-error" class="clr-radio">
-                    <label for="vertical-radio3" class="clr-control-label">option 3</label>
+                    <input type="radio" id="radio4" name="radio-error" value="option1" class="clr-radio">
+                    <label for="radio4" class="clr-control-label">option 1</label>
                 </div>
-                <clr-icon class="clr-validate-icon" shape="exclamation-circle"></clr-icon>
-                <span class="clr-subtext">Error message</span>
+                <div class="clr-radio-wrapper">
+                    <input type="radio" id="radio5" name="radio-error" value="option2" class="clr-radio">
+                    <label for="radio5" class="clr-control-label">option 2</label>
+                </div>
+                <div class="clr-radio-wrapper">
+                    <input type="radio" id="radio6" name="radio-error" value="option3" class="clr-radio">
+                    <label for="radio6" class="clr-control-label">option 3</label>
+                </div>
+                <div class="clr-subtext-wrapper">
+                    <clr-icon class="clr-validate-icon" shape="exclamation-circle"></clr-icon>
+                    <span class="clr-subtext">Error message</span>
+                </div>
             </div>
         </div>
 
@@ -181,7 +201,41 @@
 
         <clr-code-snippet [clrCode]="uiError"></clr-code-snippet>
 
+        <h4>Inline radio</h4>
 
+        <p>Radio buttons can be placed inline by default by adding the <code class="clr-code">clr-control-inline</code> directive
+            to your radio container. The radio buttons will wrap if there is not enough space.</p>
+
+        <p>The subtext content, the icon and subtext messages, also must be wrapped in a <code class="clr-code">clr-subtext-wrapper</code>
+        element so it can properly layout in all layout variations. If you omit this, the validation icon and text may appear in the wrong place.</p>
+
+        <p></p>
+
+        <div class="clr-form-control">
+            <label class="clr-control-label">Inline radio example</label>
+            <div class="clr-control-container clr-control-inline">
+                <div class="clr-radio-wrapper">
+                    <input type="radio" id="radio7" name="radio-error-inline" value="option1" class="clr-radio">
+                    <label for="radio7" class="clr-control-label">option 1</label>
+                </div>
+                <div class="clr-radio-wrapper">
+                    <input type="radio" id="radio8" name="radio-error-inline" value="option2" class="clr-radio">
+                    <label for="radio8" class="clr-control-label">option 2</label>
+                </div>
+                <div class="clr-radio-wrapper">
+                    <input type="radio" id="radio9" name="radio-error-inline" value="option3" class="clr-radio">
+                    <label for="radio9" class="clr-control-label">option 3</label>
+                </div>
+                <div class="clr-subtext-wrapper">
+                    <clr-icon class="clr-validate-icon" shape="exclamation-circle"></clr-icon>
+                    <span class="clr-subtext">Helper text</span>
+                </div>
+            </div>
+        </div>
+
+        <p></p>
+
+        <clr-code-snippet [clrCode]="uiInline"></clr-code-snippet>
 
 
         <div id="design-guidelines">

@@ -21,7 +21,7 @@ Selected user: <span class="username" *ngIf="selectedUser">{{selectedUser.name}}
 `;
 
 const ROW_SELECTION_EXAMPLE = `
-<clr-datagrid [(clrDgSingleSelected)]="selectedUser" [clDgRowSelection]="true">
+<clr-datagrid [(clrDgSingleSelected)]="selectedUser" [clrDgRowSelection]="true">
     <-- ... -->
     <clr-dg-row *clrDgItems="let user of users" [clrDgItem]="user">
         <-- ... -->
@@ -31,6 +31,13 @@ const ROW_SELECTION_EXAMPLE = `
 
 Selected user: <span class="username" *ngIf="selectedUser">{{selectedUser.name}}</span>
 `;
+
+const SELECTION_CHANGE_EVENT_EXAMPLE = `
+<clr-datagrid [clrDgSingleSelected]="selected"
+              (clrDgSingleSelectedChange)="selectionChanged($event)">
+    <-- ... -->
+</clr-datagrid>
+`
 
 @Component({
     moduleId: module.id,
@@ -42,6 +49,7 @@ Selected user: <span class="username" *ngIf="selectedUser">{{selectedUser.name}}
 export class DatagridSelectionSingleDemo {
     example = EXAMPLE;
     rowSelectionExample = ROW_SELECTION_EXAMPLE;
+    selectionChangeEventExample = SELECTION_CHANGE_EVENT_EXAMPLE;
     users: User[];
     singleSelected: User;
     rowSelected: User;

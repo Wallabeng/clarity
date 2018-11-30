@@ -16,10 +16,12 @@ import * as NgErrors from "./ng/errors.html";
 import * as NgForm from "./ng/form.html";
 import * as NgHelpers from "./ng/helpers.html";
 import * as NgLayouts from "./ng/layouts.html";
-import * as NgModule from "!raw-loader!./ng/module.txt";
 import * as NgReactiveTs from "!raw-loader!./ng/reactive.txt";
 import * as NgReactiveHtml from "./ng/reactive.html";
 import * as NgStructure from "./ng/structure.html";
+import * as NgOverride from "./ng/override.html";
+import * as NgReset from "!raw-loader!./ng/reset.txt";
+import * as NgValidate from "!raw-loader!./ng/validate.txt";
 
 @Component({
     selector: "clr-forms-demo",
@@ -39,13 +41,15 @@ export class FormsDemo extends ClarityDocComponent {
     uiGrid: any = UiGrid;
     uiLayouts: any = UiLayouts;
     uiStructure: any = UiStructure;
-
+    
     ngErrors: any = NgErrors;
     ngForm: any = NgForm;
     ngHelpers: any = NgHelpers;
     ngLayouts: any = NgLayouts;
-    ngModule: any = NgModule;
     ngReactiveTs: any = NgReactiveTs;
     ngReactiveHtml: any = NgReactiveHtml;
     ngStructure: any = NgStructure;
+    ngOverride: any = NgOverride;
+    ngReset: any = NgReset;
+    ngValidate: any = NgValidate;
 }

@@ -1,6 +1,81 @@
 {
-    "current": "0.13.0",
+    "current": "1.0.0",
     "all": {
+        "1.0.0": {
+            "date": "Nov 30, 2018",
+            "sketch": "1.0.0",
+            "commit": "6bc78a4b3ad93ac8c1161245b37eda689eeb04e5"
+        },
+        "1.0.0-rc.1": {
+            "date": "Nov 20, 2018",
+            "sketch": "0.13.7",
+            "commit": "19a2f46c0ec7f8c6921eb348aa167edecbe64f97"
+        },
+        "1.0.0-beta.2": {
+            "date": "Nov 2, 2018",
+            "sketch": "0.13.7",
+            "commit": "e2fc4db6269297c589bd7baddbd6b62eb1402c86"
+        },
+        "1.0.0-beta.1": {
+            "date": "Oct 26, 2018",
+            "sketch": "0.13.7",
+            "commit": "ae9be86ef557bf13d6cea9250b0c322e1c6211d5"
+        },
+        "0.13.10": {
+            "date": "Nov 15, 2018",
+            "sketch": "0.13.7",
+            "commit": "fc2861dc5c0d2d6a1ccd981c63af1e6840350fb1"
+        },
+        "0.13.9": {
+            "date": "Nov 8, 2018",
+            "sketch": "0.13.7",
+            "commit": "fb1da9b009c7b9c8bb24a4026b727f4da7b86e67"
+        },
+        "0.13.8": {
+            "date": "Oct 31, 2018",
+            "sketch": "0.13.7",
+            "commit": "cd595b3220073b2e8da8f5c8712a22524d33c51d"
+        },
+        "0.13.7": {
+            "date": "Oct 25, 2018",
+            "sketch": "0.13.7",
+            "commit": "aed3d3d36d1016ac5664f30ccc961d0e6b865510"
+        },
+        "0.13.6": {
+            "date": "Oct 18, 2018",
+            "sketch": "0.13.5",
+            "commit": "b9b47e7af1369c03eba053a53995d5abdf783d0c"
+        },
+        "0.13.5": {
+            "date": "Oct 5, 2018",
+            "sketch": "0.13.5",
+            "commit": "ac248b3ee919a2181d486495e510d2117747d2a5"
+        },
+        "0.13.4": {
+            "date": "Oct 4, 2018",
+            "sketch": "0.12.7",
+            "commit": "5c4e740e8dba55475c9b50dc82c2e671e80fde9c"
+        },
+        "0.13.3": {
+            "date": "Sep 27, 2018",
+            "sketch": "0.12.7",
+            "commit": "1d380aad92784d6aa16fea89550aabc5c41f599c"
+        },
+        "0.13.2": {
+            "date": "Sep 20, 2018",
+            "sketch": "0.12.7",
+            "commit": "8703f1ce55cc05467ee7cb13d2f1a3d693e9a93e"
+        },
+        "0.13.1-patch.1": {
+            "date": "Sep 13, 2018",
+            "sketch": "0.12.7",
+            "commit": "69297fcbd35d6fedd8edf5d2b91b8678a757376b"
+        },
+        "0.13.1": {
+            "date": "Sep 13, 2018",
+            "sketch": "0.12.7",
+            "commit": "73c57c9ad5637ef52fd56d4a2cbd114f029c4733"
+        },
         "0.13.0": {
             "date": "Sep 6, 2018",
             "sketch": "0.12.7",
@@ -20,6 +95,26 @@
             "date": "Aug 14, 2018",
             "sketch": "0.12.7",
             "commit": "175f3cb9318d629d014e5bcf2282ded34b102737"
+        },
+        "0.12.16": {
+            "date": "Nov 8, 2018",
+            "sketch": "0.12.7",
+            "commit": "4a96f9d3257789b4cc05b057849a4937a55c6bc4"
+        },
+        "0.12.15": {
+            "date": "Oct 25, 2018",
+            "sketch": "0.12.7",
+            "commit": "e88b1e4a90ad83db76e3fa2526d8b5562eeeee0a"
+        },
+        "0.12.14": {
+            "date": "Oct 18, 2018",
+            "sketch": "0.12.7",
+            "commit": "30749cf27f2b18dabcb7e06bfd295049d2940215"
+        },
+        "0.12.13": {
+            "date": "Oct 11, 2018",
+            "sketch": "0.12.7",
+            "commit": "a52b5c97ae642a0e3c621f1329f01c9fc679efd1"
         },
         "0.12.12": {
             "date": "Sep 6, 2018",
@@ -105,6 +200,21 @@
             "date": "May 23, 2018",
             "sketch": "0.12.2",
             "commit": "0737915bfd981701bda4b825a8b440d748f3e3a4"
+        },
+        "0.11.34": {
+            "date": "Nov 8, 2018",
+            "sketch": "0.11.6",
+            "commit": "07fca9e4216e3317db87bc9f9b863f190b8f4ebe"
+        },
+        "0.11.33": {
+            "date": "Oct 25, 2018",
+            "sketch": "0.11.6",
+            "commit": "94afba59ac09ec8d8a2ba55e25d72827f3d9f289"
+        },
+        "0.11.32": {
+            "date": "Oct 11, 2018",
+            "sketch": "0.11.6",
+            "commit": "ee7217a58a376bfd23294d77a7df26601219abde"
         },
         "0.11.30": {
             "date": "Aug 30, 2018",
